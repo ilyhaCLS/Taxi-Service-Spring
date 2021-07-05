@@ -44,7 +44,7 @@ public class RideDetailsController {
 		
 		User user = ((UserPrincipal) auth.getPrincipal()).getUser();
 		
-		GeoApiContext sc = new GeoApiContext.Builder().apiKey("AIzaSyB9nfRnIbVxpTifteh8wiI6-8OvHb7o72k").build();
+		GeoApiContext sc = new GeoApiContext.Builder().apiKey("Secret Key").build();
 		DistanceMatrix matrix = null;
 		try {
 			matrix = DistanceMatrixApi.newRequest(sc).origins(posFrom.replace(' ', '+'))
